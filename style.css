@@ -161,6 +161,17 @@ section .title::after{
     filter: brightness(90%);
 }
 
+/*  eBOOKS Banner Styling   */
+.ebooksbanner{
+    display: flex;
+    background: url("images/ebooksbanner.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
 
 /* home section styling */
 .home{
@@ -677,4 +688,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    
+
 }
