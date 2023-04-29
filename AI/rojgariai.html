@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #22b24c;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 4px;
+  right: 25px;
+  width: 200px;
+
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 200px;
+  padding: 16px 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #f7941e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  margin-bottom: 2px;
+  opacity: 0.8;
+  
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()"><img src="rojgarisanjal.png" alt="Chat Icon" class="chat-icon" height="30px" width="30px" align="left">Chat With Rojgari Sanjal AI</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+  
+ <!-- Chat popup -->
+ <iframe src="https://ora.sh/embed/30547382-6201-4d79-9591-d5ab1db036ce" height="400px" style="border:0; border-radius: 0px"></iframe>
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+// Get the chat icon and chat popup
+  var chatIcon = document.querySelector('.chat-icon');
+  var chatPopup = document.querySelector('iframe');
+
+  // Toggle the chat popup on click of the chat icon and popup text
+  chatIcon.addEventListener('click', function() {
+   if (chatPopup.style.opacity == '1') {
+    chatPopup.style.opacity = '0';
+   } else {
+    chatPopup.style.opacity = '1';
+   }
+  });
+
+  document.querySelector('.popup-text').addEventListener('click', function() {
+   if (chatPopup.style.opacity == '1') {
+    chatPopup.style.opacity = '0';
+   } else {
+    chatPopup.style.opacity = '1';
+   }
+  });
+
+  // Close the chat popup on click of the close button
+  chatPopup.contentWindow.document.querySelector('.close-btn').addEventListener('click', function() {
+   chatPopup.style.opacity = '0';
+  });
+</script>
+
+</body>
+</html>
