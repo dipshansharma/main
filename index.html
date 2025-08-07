@@ -576,13 +576,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="contact-form text-center">
-                    <form action="https://formsubmit.co/info@dipshansharma.com.np" method="POST">
-                        <!-- REQUIRED: Replace with your real email above -->
-
-                        <!-- Hidden inputs -->
+                    <form id="contactForm">
+                        <!-- Hidden inputs for FormSubmit -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://dipshansharma.com.np/thank-you.html">
 
                         <div class="form-row">
                             <div class="control-group col-sm-6">
@@ -607,7 +604,43 @@
         </div>
     </div>
 </div>
-    <!-- Contact End -->
+<!-- Contact End -->
+
+<!-- ✅ Success Popup -->
+<div id="successPopup" style="display:none; position:fixed; bottom:20px; right:20px; background:#d4edda; color:#155724; padding:15px 25px; border:1px solid #c3e6cb; border-radius:8px; z-index:9999;">
+    ✅ Thank you! Your message has been sent.
+</div>
+
+<!-- ✅ JavaScript for handling FormSubmit -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/info@dipshansharma.com.np", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById("successPopup").style.display = "block";
+            form.reset();
+            setTimeout(() => {
+                document.getElementById("successPopup").style.display = "none";
+            }, 4000); // Hide after 4 seconds
+        } else {
+            alert("Oops! Something went wrong. Please try again later.");
+        }
+    })
+    .catch(error => {
+        alert("Network error! Try again.");
+        console.error(error);
+    });
+});
+</script>
+
 
 
     <!-- Footer Start -->
@@ -659,5 +692,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
