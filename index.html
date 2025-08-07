@@ -640,8 +640,48 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     });
 });
 </script>
+    <!--Style for Contact Form--->
+<style>
+    /* Contact Form Styling */
+.contact-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
 
+.contact-form .form-control {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
 
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+.contact-form textarea.form-control {
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+</style>
+<!--- Style for Contact Form End --->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -692,6 +732,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
 
