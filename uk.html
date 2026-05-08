@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK Int'l Student Survival Guide 2026</title>
+    <title>The Ultimate UK Int'l Student Survival Guide 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
@@ -45,7 +45,8 @@
         <div class="flex-1 overflow-y-auto hide-scrollbar p-4 flex flex-row md:flex-col gap-2">
             <button class="nav-btn active w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="packing"><i class="fas fa-suitcase-rolling text-amber-400"></i> Nepal to UK Packing</button>
             <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="admin"><i class="fas fa-passport text-blue-400"></i> e-Visa & Admin</button>
-            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="jobs"><i class="fas fa-briefcase text-emerald-400"></i> Jobs & Legal</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="finance"><i class="fas fa-wallet text-emerald-400"></i> Banking & Finance</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="jobs"><i class="fas fa-briefcase text-purple-400"></i> Jobs & Legal</button>
             <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="directory"><i class="fas fa-database text-rose-400"></i> Master App Directory</button>
         </div>
         
@@ -124,6 +125,64 @@
             </div>
         </div>
 
+        <div id="finance" class="tab-content">
+            <h2 class="text-4xl font-extrabold text-navy mb-6">Banking & Remittance</h2>
+            <p class="text-slate-600 mb-8 text-lg">Set up your UK banking immediately to manage your student budget and avoid high fees when sending money to or from Nepal.</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <!-- Monzo -->
+                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-wallet text-4xl text-emerald-500"></i>
+                        <h3 class="font-bold text-xl text-navy">Monzo</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 flex-1">The ultimate digital daily driver for students. Great for budgeting and splitting bills with flatmates.</p>
+                    <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100 text-center mt-auto">
+                        <span class="block text-emerald-800 font-bold mb-2">🎁 Get £10 Bonus</span>
+                        <p class="text-xs text-emerald-600 mb-3">Make a qualifying card payment within 30 days.</p>
+                        <button onclick="copyCode('4z09hx0')" class="w-full bg-emerald-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-emerald-700 active:scale-95 transition">Copy Code: 4z09hx0</button>
+                    </div>
+                </div>
+
+                <!-- Lloyds Bank -->
+                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-building-columns text-4xl text-blue-600"></i>
+                        <h3 class="font-bold text-xl text-navy">Lloyds Bank</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 flex-1">A reliable high-street bank. Essential for proving your UK address to landlords.</p>
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 text-center mt-auto">
+                        <span class="block text-blue-800 font-bold mb-2">🎁 £100 Cash + Deliveroo</span>
+                        <p class="text-xs text-blue-600 mb-3">Open a Student Account to claim £100 cash and vouchers.</p>
+                        <button onclick="copyCode('LLOYDS-STUDENT-REF')" class="w-full bg-blue-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition">Copy Referral Code</button>
+                    </div>
+                </div>
+
+                <!-- Tap Tap Send -->
+                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-paper-plane text-4xl text-purple-600"></i>
+                        <h3 class="font-bold text-xl text-navy">Tap Tap Send</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 flex-1">One of the best and fastest apps for sending remittance money back to Nepal with great rates.</p>
+                    <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 text-center mt-auto">
+                        <span class="block text-purple-800 font-bold mb-2">🎁 £5 Referral Bonus</span>
+                        <p class="text-xs text-purple-600 mb-3">Get bonus credit applied to your next transfer.</p>
+                        <button onclick="copyCode('TAPTAP-NEPAL-REF')" class="w-full bg-purple-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-purple-700 active:scale-95 transition">Copy Referral Code</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-amber-50 border border-amber-200 p-6 rounded-2xl mb-8 flex flex-col md:flex-row items-center gap-6">
+                 <i class="fas fa-money-bill-transfer text-4xl text-amber-500"></i>
+                 <div>
+                    <h3 class="font-bold text-amber-900 text-lg mb-1">Wise (TransferWise)</h3>
+                    <p class="text-amber-800 text-sm">Also highly recommended for receiving tuition money from Nepal to the UK using the real mid-market exchange rate. Use referral code for fee-free transfers up to £500.</p>
+                 </div>
+                 <button onclick="copyCode('WISE-STUDENT-2026')" class="mt-4 md:mt-0 md:ml-auto bg-amber-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-amber-600 transition flex-shrink-0">Copy Wise Code</button>
+            </div>
+        </div>
+
         <div id="jobs" class="tab-content">
             <h2 class="text-4xl font-extrabold text-navy mb-6">Work Rules & Hustles</h2>
             
@@ -172,6 +231,29 @@
                     </thead>
                     <tbody id="appTable" class="divide-y divide-slate-200 bg-white">
                         
+                        <!-- Finance & Remittance -->
+                        <tr class="app-row">
+                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Finance</span></td>
+                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-wallet mr-2 text-emerald-500"></i>Monzo</td>
+                            <td class="px-6 py-4 text-slate-600">Digital banking app. Use referral code for a £10 bonus. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('4z09hx0')">Copy Code</span></td>
+                        </tr>
+                        <tr class="app-row">
+                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Finance</span></td>
+                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-building-columns mr-2 text-blue-600"></i>Lloyds Bank</td>
+                            <td class="px-6 py-4 text-slate-600">High-street bank. Student account offers £100 cash and Deliveroo vouchers.</td>
+                        </tr>
+                        <tr class="app-row">
+                            <td class="px-6 py-4"><span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-md text-xs font-bold">Remittance</span></td>
+                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-paper-plane mr-2 text-purple-600"></i>Tap Tap Send</td>
+                            <td class="px-6 py-4 text-slate-600">Send money back home to Nepal quickly with low fees. Use referral code for bonus credit. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('TAPTAP-NEPAL-REF')">Copy Code</span></td>
+                        </tr>
+                        <tr class="app-row">
+                            <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Remittance</span></td>
+                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-money-bill-transfer mr-2 text-amber-500"></i>Wise</td>
+                            <td class="px-6 py-4 text-slate-600">Receive tuition money or send funds internationally with real mid-market rates. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('WISE-STUDENT-2026')">Copy Code</span></td>
+                        </tr>
+
+                        <!-- AI & Study -->
                         <tr class="app-row">
                             <td class="px-6 py-4"><span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold">AI & Study</span></td>
                             <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-sparkles mr-2 text-indigo-500"></i>Google Gemini</td>
@@ -188,6 +270,7 @@
                             <td class="px-6 py-4 text-slate-600">Hundreds of dollars of free software (Copilot, Domains) for Computer Science. <a href="https://education.github.com/pack" target="_blank" class="text-blue-600 font-bold block mt-1">Get Pack</a></td>
                         </tr>
 
+                        <!-- Freebies & Discounts -->
                         <tr class="app-row">
                             <td class="px-6 py-4"><span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-md text-xs font-bold">Freebies</span></td>
                             <td class="px-6 py-4 font-bold text-navy"><i class="fab fa-amazon mr-2 text-amber-500"></i>Prime Student</td>
@@ -199,6 +282,7 @@
                             <td class="px-6 py-4 text-slate-600">The mandatory apps for 10-20% off Apple, ASOS, and restaurants. Download from App Store.</td>
                         </tr>
 
+                        <!-- Supermarkets -->
                         <tr class="app-row">
                             <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Supermarkets</span></td>
                             <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-basket-shopping mr-2 text-emerald-500"></i>Aldi & Lidl (Plus App)</td>
@@ -225,6 +309,7 @@
                             <td class="px-6 py-4 text-slate-600">Use Vinted to buy high-quality second-hand winter coats. Shein/Temu for cheap room decor.</td>
                         </tr>
 
+                        <!-- Transport -->
                         <tr class="app-row">
                             <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Transport</span></td>
                             <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-train mr-2 text-blue-500"></i>Trainpal & Trainline</td>
@@ -246,6 +331,7 @@
                             <td class="px-6 py-4 text-slate-600">If in London, link your 16-25 Railcard to an Oyster card at a station for 1/3 off Tube travel.</td>
                         </tr>
 
+                        <!-- Housing -->
                         <tr class="app-row">
                             <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Housing</span></td>
                             <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-bed mr-2 text-slate-600"></i>SpareRoom</td>
