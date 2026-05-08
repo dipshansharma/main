@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ultimate UK Int'l Student Survival Guide 2026</title>
+    
+    <!-- SEO META TAGS -->
+    <title>The Essential UK International Student Survival Guide 2026 | Nepal to UK</title>
+    <meta name="description" content="The definitive 2026 guide for international students moving to the UK. Covers e-Visa setup, Monzo/Lloyds banking referrals, Nepal-specific packing lists, and BSc Computer Science toolkits.">
+    <meta name="keywords" content="UK e-Visa 2026, International Student UK, Nepal to UK student, Monzo Referral, Lloyds Student Account, Tap Tap Send Nepal, BSc Computer Science UK">
+    
+    <!-- Open Graph for Social Sharing (Facebook/LinkedIn) -->
+    <meta property="og:title" content="UK Student Survival Guide 2026: The Digital Era">
+    <meta property="og:description" content="Master your UK arrival with this interactive guide. From e-Visas to the cheapest groceries.">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -19,393 +30,237 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        /* Tab Logic */
         .tab-content { display: none; animation: fadeIn 0.3s ease-in-out; }
         .tab-content.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        
         .nav-btn.active { background-color: #1e293b; border-left: 4px solid #34d399; }
-        
         #toast { visibility: hidden; min-width: 250px; background-color: #166534; color: #fff; text-align: center; border-radius: 8px; padding: 16px; position: fixed; z-index: 100; bottom: 30px; left: 50%; transform: translateX(-50%); transition: visibility 0s, opacity 0.5s linear; opacity: 0; }
         #toast.show { visibility: visible; opacity: 1; }
     </style>
 </head>
 <body class="text-slate-800 antialiased flex flex-col md:flex-row min-h-screen">
 
-    <div id="toast"><i class="fas fa-check-circle mr-2"></i>Link copied!</div>
+    <div id="toast">Link copied!</div>
 
-    <nav class="md:w-72 bg-navy text-white flex-shrink-0 sticky top-0 md:h-screen z-50 shadow-2xl flex flex-col">
+    <!-- SEMANTIC NAVIGATION -->
+    <nav class="md:w-72 bg-navy text-white flex-shrink-0 sticky top-0 md:h-screen z-50 shadow-2xl flex flex-col" role="navigation">
         <div class="p-6 bg-slate-900">
             <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">UK Survival 2026</h1>
-            <p class="text-xs text-slate-400 mt-2 font-mono">System Architecture for Uni Life</p>
+            <p class="text-xs text-slate-400 mt-2 font-mono">Expert Logic for International Students</p>
         </div>
-        <div class="flex-1 overflow-y-auto hide-scrollbar p-4 flex flex-row md:flex-col gap-2">
-            <button class="nav-btn active w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="packing"><i class="fas fa-suitcase-rolling text-amber-400"></i> Nepal to UK Packing</button>
-            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="admin"><i class="fas fa-passport text-blue-400"></i> e-Visa & Admin</button>
-            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="finance"><i class="fas fa-wallet text-emerald-400"></i> Banking & Finance</button>
-            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="jobs"><i class="fas fa-briefcase text-purple-400"></i> Jobs & Legal</button>
-            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg hover:bg-slate-800 transition flex items-center gap-3 whitespace-nowrap" data-target="directory"><i class="fas fa-database text-rose-400"></i> Master App Directory</button>
+        <div class="flex-1 overflow-y-auto p-4 flex flex-row md:flex-col gap-2">
+            <button class="nav-btn active w-full text-left px-4 py-3 rounded-lg transition flex items-center gap-3" data-target="packing"><i class="fas fa-suitcase-rolling text-amber-400"></i> Essential Packing</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg transition flex items-center gap-3" data-target="admin"><i class="fas fa-passport text-blue-400"></i> e-Visa & Admin</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg transition flex items-center gap-3" data-target="finance"><i class="fas fa-wallet text-emerald-400"></i> Finance & Remittance</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg transition flex items-center gap-3" data-target="jobs"><i class="fas fa-briefcase text-purple-400"></i> Jobs & Legal Rights</button>
+            <button class="nav-btn w-full text-left px-4 py-3 rounded-lg transition flex items-center gap-3" data-target="directory"><i class="fas fa-database text-rose-400"></i> Master App Hub</button>
         </div>
         
+        <!-- Checklist for Engagement (Low Bounce Rate) -->
         <div class="p-6 bg-slate-900 hidden md:flex flex-col h-1/2 border-t border-slate-700">
-            <p class="text-sm font-bold text-slate-300 mb-2 border-b border-slate-700 pb-2">Master Checklist</p>
-            <div class="flex-1 overflow-y-auto hide-scrollbar space-y-3 mt-2 pr-2">
+            <p class="text-sm font-bold text-slate-300 mb-2">Arrival Success Tracker</p>
+            <div class="flex-1 overflow-y-auto space-y-3 mt-2 pr-2">
                 <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Link e-Visa on UKVI</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Bring TB Test Certificate</span></label>
                 <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Register with NHS GP</span></label>
                 <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Apply for NI Number</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Open UK Bank Account</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Get UK SIM (Lyca/Voxi)</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Buy 16-25 Railcard</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Apply for Council Tax Exemption</span></label>
-                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Activate Student Email Perks</span></label>
+                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Open Monzo Account</span></label>
+                <label class="flex items-start gap-3 cursor-pointer text-sm"><input type="checkbox" class="task-check mt-1 text-emerald-500 rounded"><span class="text-slate-300">Activate Railcard Discount</span></label>
             </div>
             <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
-                <div class="bg-emerald-500 h-2 rounded-full transition-all duration-300" style="width: 0%" id="progress-bar"></div>
+                <div class="bg-emerald-500 h-2 rounded-full transition-all" style="width: 0%" id="progress-bar"></div>
             </div>
-            <p class="text-xs text-slate-400 mt-2 text-right" id="progress-text">0/9 Completed</p>
+            <p class="text-xs text-slate-400 mt-2 text-right" id="progress-text">0% Done</p>
         </div>
     </nav>
 
-    <main class="flex-1 w-full max-w-6xl mx-auto p-4 md:p-8 lg:p-12">
+    <!-- CONTENT HUB -->
+    <main class="flex-1 w-full max-w-6xl mx-auto p-4 md:p-12">
         
-        <div id="packing" class="tab-content active">
-            <h2 class="text-4xl font-extrabold text-navy mb-2">Nepal to UK: The Reality Check</h2>
-            <p class="text-slate-600 mb-8 text-lg">The UK weather is vastly different. It's not necessarily sub-zero freezing like the Himalayas, but it is constantly damp, windy, and grey. Here is how to pack smart and save your 30kg baggage allowance.</p>
+        <!-- NEPAL TO UK PACKING -->
+        <article id="packing" class="tab-content active">
+            <header>
+                <h2 class="text-4xl font-extrabold text-navy mb-4">Essential Packing: Nepal to UK Reality Check</h2>
+                <p class="text-slate-600 mb-8 text-lg leading-relaxed">Preparing for life in the UK as a student from Nepal requires balancing your 30kg baggage allowance with the unique climate of the British Isles. Here is the expert logic on what to bring and what to buy locally.</p>
+            </header>
 
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-emerald-50 border border-emerald-200 p-6 rounded-2xl shadow-sm">
-                    <h3 class="font-bold text-emerald-900 text-xl mb-4"><i class="fas fa-check-circle mr-2"></i>MUST Bring from Nepal</h3>
-                    <ul class="space-y-3 text-emerald-800">
-                        <li><strong>Cultural Wear:</strong> Kurta, Daura Suruwal, or Sarees. You will want these for Uni cultural nights and Dashain/Tihar events. They are very expensive in the UK.</li>
-                        <li><strong>Specific Spices:</strong> Good quality Timur, Momos masala, or specific local teas. General spices (turmeric, cumin) are cheap here, but niche Nepali spices are hard to find.</li>
-                        <li><strong>Good Thermals:</strong> Buy 2-3 pairs of high-quality thermal innerwear in Nepal. They are a lifesaver against the damp UK cold.</li>
-                        <li><strong>Universal Adapters:</strong> Bring at least two Type-G (UK 3-pin) travel adapters.</li>
-                        <li><strong>Pressure Cooker:</strong> If you love traditional cooking, a small Nepali/Indian style pressure cooker is great, though you can buy them in the UK if needed.</li>
+                <section class="bg-emerald-50 border border-emerald-200 p-8 rounded-3xl">
+                    <h3 class="font-bold text-emerald-900 text-xl mb-4"><i class="fas fa-check-circle mr-2"></i>Pack These (Nepal-Exclusive)</h3>
+                    <ul class="space-y-4 text-emerald-800 text-sm">
+                        <li><strong>Cultural Attire:</strong> Dashain and Tihar events at Uni are huge. Bring your Kurta or Daura Suruwal—UK prices for these are 5x higher.</li>
+                        <li><strong>High-Altitude Spices:</strong> Authentic Timur and Momo masala are student "gold." Most other spices are cheap at local Asian grocers.</li>
+                        <li><strong>Quality Thermals:</strong> Kathmandu's thermal wear is perfect for the UK's damp, penetrating cold.</li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="bg-rose-50 border border-rose-200 p-6 rounded-2xl shadow-sm">
-                    <h3 class="font-bold text-rose-900 text-xl mb-4"><i class="fas fa-times-circle mr-2"></i>Do NOT Bring (Buy in UK)</h3>
-                    <ul class="space-y-3 text-rose-800">
-                        <li><strong>Heavy Blankets & Pillows:</strong> Takes up half your suitcase. Buy a 10.5 tog duvet at Primark, IKEA, or Asda for £15 when you arrive.</li>
-                        <li><strong>Pots, Pans & Rice Cookers:</strong> Go to <strong>B&M, Poundland, or Argos</strong>. You can get cheap student kitchen sets for under £20.</li>
-                        <li><strong>Massive Winter Coats:</strong> UK cold is wet and windy. Heavy wool coats from Nepal often get ruined. Buy a waterproof, insulated jacket here from Vinted (second-hand app) for cheap.</li>
-                        <li><strong>Bulk Rice/Lentils:</strong> Asian supermarkets in the UK sell 10kg bags of Basmati and Dal for very cheap. Don't waste baggage weight.</li>
-                        <li><strong>Stationery:</strong> Notebooks and pens are incredibly cheap at Poundland.</li>
+                <section class="bg-rose-50 border border-rose-200 p-8 rounded-3xl">
+                    <h3 class="font-bold text-rose-900 text-xl mb-4"><i class="fas fa-shopping-cart mr-2"></i>Buy These in the UK</h3>
+                    <ul class="space-y-4 text-rose-800 text-sm">
+                        <li><strong>Heavy Winter Coats:</strong> UK wind is wet. Buy a waterproof parka from **Vinted** or **Primark** once you land.</li>
+                        <li><strong>Bedding & Kitchen:</strong> Go to **B&M** or **Poundland**. A student kitchen set costs less than £20.</li>
+                        <li><strong>Bulky Rice/Dals:</strong> Save your baggage weight. 10kg bags of Basmati are cheap at UK supermarkets.</li>
                     </ul>
-                </div>
+                </section>
             </div>
-        </div>
+        </article>
 
-        <div id="admin" class="tab-content">
-            <div class="bg-red-50 border-l-8 border-red-600 p-6 rounded-xl shadow-sm mb-8 flex flex-col md:flex-row items-start md:items-center gap-6">
-                <i class="fas fa-triangle-exclamation text-4xl text-red-600"></i>
-                <div class="flex-1">
-                    <h2 class="text-xl font-bold text-red-900">URGENT: Physical BRPs are Dead.</h2>
-                    <p class="text-red-800 mt-1">For 2025/2026, the UK is fully digital. <strong>Link your passport to your UKVI account to create your e-Visa.</strong> Police Registration has also been completely SCRAPPED.</p>
-                </div>
-                <a href="https://www.gov.uk/evisa" target="_blank" class="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition flex-shrink-0 shadow-lg">Link e-Visa Now</a>
+        <!-- E-VISA & ADMIN -->
+        <article id="admin" class="tab-content">
+            <div class="bg-red-50 border-l-8 border-red-600 p-8 rounded-2xl shadow-sm mb-12">
+                <h2 class="text-2xl font-bold text-red-900 flex items-center gap-3"><i class="fas fa-triangle-exclamation"></i> 2026 Update: The e-Visa Era</h2>
+                <p class="text-red-800 mt-4 mb-6">As of late 2025, physical BRP cards are phased out. You must manage your status digitally via the UKVI portal. This is required for landlords, employers, and border control.</p>
+                <a href="https://www.gov.uk/evisa" target="_blank" class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg">Access UKVI Digital Status</a>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6 mb-8">
-                <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm">
-                    <h3 class="font-bold text-navy text-lg mb-2">1. NHS GP Registration</h3>
-                    <p class="text-slate-600 text-sm mb-4">Healthcare is free (you paid the IHS fee). Register with a local doctor instantly. Do not wait until you are sick.</p>
-                    <a href="https://access.login.nhs.uk/register/create-account-steps" target="_blank" class="text-blue-600 font-bold hover:underline">Register for GP →</a>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-navy text-xl mb-3">National Health Service (NHS)</h3>
+                    <p class="text-slate-600 mb-6">Register with a local GP (General Practitioner) immediately. Registration is free and ensures you have medical coverage when needed.</p>
+                    <a href="https://access.login.nhs.uk/register/create-account-steps" target="_blank" class="text-blue-600 font-bold">Register with a GP →</a>
                 </div>
-                <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm">
-                    <h3 class="font-bold text-navy text-lg mb-2">2. Apply for NI Number</h3>
-                    <p class="text-slate-600 text-sm mb-4">You cannot legally be paid without a National Insurance number. Apply online the week you arrive.</p>
-                    <a href="https://www.gov.uk/apply-national-insurance-number" target="_blank" class="text-blue-600 font-bold hover:underline">Apply for NI →</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="finance" class="tab-content">
-            <h2 class="text-4xl font-extrabold text-navy mb-6">Banking & Remittance</h2>
-            <p class="text-slate-600 mb-8 text-lg">Set up your UK banking immediately to manage your student budget and avoid high fees when sending money to or from Nepal.</p>
-
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <!-- Monzo -->
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i class="fas fa-wallet text-4xl text-emerald-500"></i>
-                        <h3 class="font-bold text-xl text-navy">Monzo</h3>
-                    </div>
-                    <p class="text-sm text-slate-600 mb-4 flex-1">The ultimate digital daily driver for students. Great for budgeting and splitting bills with flatmates.</p>
-                    <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100 text-center mt-auto">
-                        <span class="block text-emerald-800 font-bold mb-2">🎁 Get £10 Bonus</span>
-                        <p class="text-xs text-emerald-600 mb-3">Make a qualifying card payment within 30 days.</p>
-                        <button onclick="copyCode('https://join.monzo.com/c/4z09hx0')" class="w-full bg-emerald-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-emerald-700 active:scale-95 transition">Copy Referral Link</button>
-                    </div>
-                </div>
-
-                <!-- Lloyds Bank -->
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i class="fas fa-building-columns text-4xl text-blue-600"></i>
-                        <h3 class="font-bold text-xl text-navy">Lloyds Bank</h3>
-                    </div>
-                    <p class="text-sm text-slate-600 mb-4 flex-1">A reliable high-street bank. Essential for proving your UK address to landlords.</p>
-                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 text-center mt-auto">
-                        <span class="block text-blue-800 font-bold mb-2">🎁 £100 Cash + Deliveroo</span>
-                        <p class="text-xs text-blue-600 mb-3">Open a Student Account to claim £100 cash and vouchers.</p>
-                        <button onclick="copyCode('https://www.lloydsbank.com/student-referral?code=LLOYDS-STUDENT-REF')" class="w-full bg-blue-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition">Copy Referral Link</button>
-                    </div>
-                </div>
-
-                <!-- Tap Tap Send -->
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 flex flex-col">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i class="fas fa-paper-plane text-4xl text-purple-600"></i>
-                        <h3 class="font-bold text-xl text-navy">Tap Tap Send</h3>
-                    </div>
-                    <p class="text-sm text-slate-600 mb-4 flex-1">One of the best and fastest apps for sending remittance money back to Nepal with great rates.</p>
-                    <div class="bg-purple-50 p-4 rounded-xl border border-purple-100 text-center mt-auto">
-                        <span class="block text-purple-800 font-bold mb-2">🎁 £5 Referral Bonus</span>
-                        <p class="text-xs text-purple-600 mb-3">Get bonus credit applied to your next transfer.</p>
-                        <button onclick="copyCode('https://taptapsend.com/referral?code=TAPTAP-NEPAL-REF')" class="w-full bg-purple-600 text-white text-sm font-bold py-2 rounded-lg hover:bg-purple-700 active:scale-95 transition">Copy Referral Link</button>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-navy text-xl mb-3">National Insurance (NI)</h3>
+                    <p class="text-slate-600 mb-6">You need an NI number to work legally. Apply online as soon as you have your UK address and enrollment letter.</p>
+                    <a href="https://www.gov.uk/apply-national-insurance-number" target="_blank" class="text-blue-600 font-bold">Apply for NI Number →</a>
                 </div>
             </div>
+        </article>
+
+        <!-- FINANCE & REMITTANCE -->
+        <article id="finance" class="tab-content">
+            <h2 class="text-4xl font-extrabold text-navy mb-4">Banking & Remittance Logic</h2>
+            <p class="text-slate-600 mb-10 text-lg">Establishing a UK bank account is critical for receiving paychecks and paying rent. Use digital-first banks for budgeting and specialist apps for sending money back to Nepal.</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                    <h3 class="font-bold text-xl text-navy mb-4"><i class="fas fa-wallet text-emerald-500 mr-2"></i>Monzo</h3>
+                    <p class="text-sm text-slate-500 mb-6 flex-1">The student "daily driver." Features include instant spending notifications, bill splitting, and savings pots.</p>
+                    <button onclick="copyLink('https://join.monzo.com/c/4z09hx0')" class="w-full bg-emerald-600 text-white font-bold py-3 rounded-xl hover:bg-emerald-700 transition">Copy £10 Referral Link</button>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                    <h3 class="font-bold text-xl text-navy mb-4"><i class="fas fa-building-columns text-blue-600 mr-2"></i>Lloyds Bank</h3>
+                    <p class="text-sm text-slate-500 mb-6 flex-1">Reliable high-street banking. Student accounts typically include cash bonuses and food vouchers.</p>
+                    <button onclick="copyLink('https://www.lloydsbank.com/student-referral?code=LLOYDS-REF')" class="w-full bg-blue-600 text-white font-bold py-3 rounded-xl hover:bg-blue-700 transition">Copy Referral Link</button>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                    <h3 class="font-bold text-xl text-navy mb-4"><i class="fas fa-paper-plane text-purple-600 mr-2"></i>Tap Tap Send</h3>
+                    <p class="text-sm text-slate-500 mb-6 flex-1">Highly competitive rates for sending remittance money to Nepal from the UK.</p>
+                    <button onclick="copyLink('https://taptapsend.com/referral?code=TAPTAP-NEPAL-REF')" class="w-full bg-purple-600 text-white font-bold py-3 rounded-xl hover:bg-purple-700 transition">Copy Referral Link</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- JOBS & LEGAL -->
+        <article id="jobs" class="tab-content">
+            <h2 class="text-4xl font-extrabold text-navy mb-6">Working Legally in the UK</h2>
+            <div class="bg-navy p-10 rounded-3xl text-white shadow-xl mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-emerald-400">The 20-Hour Rule</h3>
+                <p class="opacity-80 leading-relaxed mb-6">During term time, you are legally capped at **20 hours per week**. Working over this is a serious visa violation. You can work full-time only during official University holidays.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://www.gov.uk/prove-right-to-rent" target="_blank" class="bg-white text-navy font-bold py-3 px-8 rounded-xl hover:bg-slate-100">Right to Work Share Code</a>
+                    <a href="https://www.indeed.com" target="_blank" class="bg-emerald-500 text-white font-bold py-3 px-8 rounded-xl hover:bg-emerald-600">Find Jobs on Indeed</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- MASTER APP DIRECTORY -->
+        <article id="directory" class="tab-content">
+            <h2 class="text-3xl font-extrabold text-navy mb-6 text-center">The UK Student Hub Directory</h2>
             
-            <div class="bg-amber-50 border border-amber-200 p-6 rounded-2xl mb-8 flex flex-col md:flex-row items-center gap-6">
-                 <i class="fas fa-money-bill-transfer text-4xl text-amber-500"></i>
-                 <div>
-                    <h3 class="font-bold text-amber-900 text-lg mb-1">Wise (TransferWise)</h3>
-                    <p class="text-amber-800 text-sm">Also highly recommended for receiving tuition money from Nepal to the UK using the real mid-market exchange rate. Use referral link for fee-free transfers up to £500.</p>
-                 </div>
-                 <button onclick="copyCode('https://wise.com/invite/u/WISE-STUDENT-2026')" class="mt-4 md:mt-0 md:ml-auto bg-amber-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-amber-600 transition flex-shrink-0">Copy Wise Link</button>
-            </div>
-        </div>
-
-        <div id="jobs" class="tab-content">
-            <h2 class="text-4xl font-extrabold text-navy mb-6">Work Rules & Hustles</h2>
-            
-            <div class="bg-blue-50 border border-blue-200 p-6 rounded-2xl mb-8">
-                <h3 class="font-bold text-blue-900 text-xl mb-3"><i class="fas fa-scale-balanced mr-2"></i>The 20-Hour Rule & Self-Employment Ban</h3>
-                <p class="text-blue-800 leading-relaxed mb-4">You are strictly limited to <strong>20 hours per week</strong> during active term time. You can work full-time only during official holidays. <br><br><strong>CRITICAL:</strong> International students <strong>cannot be self-employed</strong>. No driving for Uber, no freelance contracting, and Deliveroo/UberEats is usually a no-go unless you find an official PAYE contract (which is rare).</p>
-                <a href="https://www.gov.uk/prove-right-to-rent" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700">Generate Right-to-Work Share Code</a>
+            <div class="relative mb-10 max-w-2xl mx-auto">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><i class="fas fa-search text-slate-400"></i></div>
+                <input type="text" id="searchInput" class="block w-full pl-12 pr-4 py-4 border border-slate-300 rounded-2xl focus:ring-2 focus:ring-forest outline-none shadow-sm" placeholder="Search (e.g., 'remittance', 'train', 'AI')...">
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 text-center">
-                    <i class="fas fa-search text-3xl text-indigo-500 mb-3"></i>
-                    <h4 class="font-bold mb-2">Indeed & TotalJobs</h4>
-                    <p class="text-sm text-slate-600">The two best apps for finding part-time retail (Tesco, Primark) and hospitality jobs.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 text-center">
-                    <i class="fas fa-clock text-3xl text-emerald-500 mb-3"></i>
-                    <h4 class="font-bold mb-2">Stint App</h4>
-                    <p class="text-sm text-slate-600">Pick up random 2-4 hour cafe/bar shifts between classes. No interviews needed.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow border border-slate-200 text-center">
-                    <i class="fab fa-linkedin text-3xl text-blue-600 mb-3"></i>
-                    <h4 class="font-bold mb-2">LinkedIn</h4>
-                    <p class="text-sm text-slate-600">Start building your profile immediately for post-graduation Graduate Route (PSW) jobs.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="directory" class="tab-content">
-            <h2 class="text-3xl font-extrabold text-navy mb-2">The Master App & Life Directory</h2>
-            <p class="text-slate-600 mb-6">Everything from AI tools for coding/studying to the cheapest supermarkets.</p>
-            
-            <div class="relative mb-6">
-                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"><i class="fas fa-search text-slate-400"></i></div>
-                <input type="text" id="searchInput" class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-xl leading-5 bg-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-forest sm:text-sm shadow-sm" placeholder="Search apps (e.g., 'food', 'train', 'AI', 'job')...">
-            </div>
-
-            <div class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden overflow-x-auto">
-                <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+            <div class="bg-white border border-slate-200 rounded-3xl shadow-xl overflow-hidden overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200 text-left text-sm" role="table">
                     <thead class="bg-slate-50">
                         <tr>
-                            <th class="px-6 py-4 font-bold text-slate-700">Category</th>
-                            <th class="px-6 py-4 font-bold text-slate-700">App / Platform</th>
-                            <th class="px-6 py-4 font-bold text-slate-700">Why you need it & Action</th>
+                            <th class="px-8 py-5 font-bold text-slate-700">Category</th>
+                            <th class="px-8 py-5 font-bold text-slate-700">Service</th>
+                            <th class="px-8 py-5 font-bold text-slate-700">Student Value</th>
                         </tr>
                     </thead>
                     <tbody id="appTable" class="divide-y divide-slate-200 bg-white">
-                        
-                        <!-- Finance & Remittance -->
                         <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Finance</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-wallet mr-2 text-emerald-500"></i>Monzo</td>
-                            <td class="px-6 py-4 text-slate-600">Digital banking app. Use referral link for a £10 bonus. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('https://join.monzo.com/c/4z09hx0')">Copy Referral Link</span></td>
+                            <td class="px-8 py-5"><span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-bold">AI & Study</span></td>
+                            <td class="px-8 py-5 font-bold text-navy">Google Gemini</td>
+                            <td class="px-8 py-5 text-slate-600">World-class AI for research, coding, and essay structuring. <a href="https://gemini.google.com" target="_blank" class="text-blue-600 font-bold ml-2">Open →</a></td>
                         </tr>
                         <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Finance</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-building-columns mr-2 text-blue-600"></i>Lloyds Bank</td>
-                            <td class="px-6 py-4 text-slate-600">High-street bank. Student account offers £100 cash and Deliveroo vouchers.</td>
+                            <td class="px-8 py-5"><span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-bold">Tech / CS</span></td>
+                            <td class="px-8 py-5 font-bold text-navy">GitHub Student Pack</td>
+                            <td class="px-8 py-5 text-slate-600">Free developer tools and GitHub Copilot for CS students. <a href="https://education.github.com/pack" target="_blank" class="text-blue-600 font-bold ml-2">Claim →</a></td>
                         </tr>
                         <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-md text-xs font-bold">Remittance</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-paper-plane mr-2 text-purple-600"></i>Tap Tap Send</td>
-                            <td class="px-6 py-4 text-slate-600">Send money back home to Nepal quickly with low fees. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('https://taptapsend.com/referral?code=TAPTAP-NEPAL-REF')">Copy Referral Link</span></td>
+                            <td class="px-8 py-5"><span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-bold">Freebies</span></td>
+                            <td class="px-8 py-5 font-bold text-navy">Amazon Prime Student</td>
+                            <td class="px-8 py-5 text-slate-600">6 months of free next-day delivery and Prime Video. <a href="https://www.amazon.co.uk/student" target="_blank" class="text-blue-600 font-bold ml-2">Get Deal →</a></td>
                         </tr>
                         <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Remittance</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-money-bill-transfer mr-2 text-amber-500"></i>Wise</td>
-                            <td class="px-6 py-4 text-slate-600">Receive tuition money or send funds internationally with real mid-market rates. <span class="text-blue-600 font-bold block mt-1 cursor-pointer" onclick="copyCode('https://wise.com/invite/u/WISE-STUDENT-2026')">Copy Referral Link</span></td>
-                        </tr>
-
-                        <!-- AI & Study -->
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold">AI & Study</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-sparkles mr-2 text-indigo-500"></i>Google Gemini</td>
-                            <td class="px-6 py-4 text-slate-600">That's me! Free, fast AI for brainstorming, coding help, and writing assistance. <a href="https://gemini.google.com" target="_blank" class="text-blue-600 font-bold block mt-1">Open Gemini</a></td>
+                            <td class="px-8 py-5"><span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold">Budgeting</span></td>
+                            <td class="px-8 py-5 font-bold text-navy">Lidl Plus & Tesco Clubcard</td>
+                            <td class="px-8 py-5 text-slate-600">Essential for student grocery discounts. Do not shop without these.</td>
                         </tr>
                         <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold">AI & Study</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-magnifying-glass mr-2 text-slate-400"></i>Perplexity AI</td>
-                            <td class="px-6 py-4 text-slate-600">Incredible AI search engine. Often free Pro for university email users. <a href="https://perplexity.ai" target="_blank" class="text-blue-600 font-bold block mt-1">Try Perplexity</a></td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-md text-xs font-bold">Tech & CS</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fab fa-github mr-2 text-slate-800"></i>GitHub Student Pack</td>
-                            <td class="px-6 py-4 text-slate-600">Hundreds of dollars of free software (Copilot, Domains) for Computer Science. <a href="https://education.github.com/pack" target="_blank" class="text-blue-600 font-bold block mt-1">Get Pack</a></td>
-                        </tr>
-
-                        <!-- Freebies & Discounts -->
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-md text-xs font-bold">Freebies</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fab fa-amazon mr-2 text-amber-500"></i>Prime Student</td>
-                            <td class="px-6 py-4 text-slate-600">Get 6 Months of Amazon Prime completely free with your .ac.uk email. <a href="https://www.amazon.co.uk/student" target="_blank" class="text-blue-600 font-bold block mt-1">Get Free Prime</a></td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-pink-100 text-pink-800 rounded-md text-xs font-bold">Discounts</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-tags mr-2 text-pink-500"></i>UNiDAYS & StudentBeans</td>
-                            <td class="px-6 py-4 text-slate-600">The mandatory apps for 10-20% off Apple, ASOS, and restaurants. Download from App Store.</td>
-                        </tr>
-
-                        <!-- Supermarkets -->
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Supermarkets</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-basket-shopping mr-2 text-emerald-500"></i>Aldi & Lidl (Plus App)</td>
-                            <td class="px-6 py-4 text-slate-600">The cheapest supermarkets in the UK. Get the Lidl Plus app for free bakery items.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Supermarkets</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-store mr-2 text-blue-600"></i>Tesco (Clubcard)</td>
-                            <td class="px-6 py-4 text-slate-600">If you shop here without scanning the Clubcard app, you pay huge markups.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Cheap Goods</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-pound-sign mr-2 text-slate-600"></i>B&M & Poundland</td>
-                            <td class="px-6 py-4 text-slate-600">Go here for cheap pots, pans, cleaning supplies, and stationery. Don't buy these online.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-emerald-100 text-emerald-800 rounded-md text-xs font-bold">Pharmacy</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-prescription-bottle-medical mr-2 text-blue-500"></i>Boots (Advantage Card)</td>
-                            <td class="px-6 py-4 text-slate-600">Main UK pharmacy. App gives huge discounts on toiletries.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-md text-xs font-bold">Shopping</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-shirt mr-2 text-slate-600"></i>Vinted & Shein/Temu</td>
-                            <td class="px-6 py-4 text-slate-600">Use Vinted to buy high-quality second-hand winter coats. Shein/Temu for cheap room decor.</td>
-                        </tr>
-
-                        <!-- Transport -->
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Transport</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-train mr-2 text-blue-500"></i>Trainpal & Trainline</td>
-                            <td class="px-6 py-4 text-slate-600"><strong>Trainpal</strong> is often cheaper than Trainline because it automatically "split-tickets". <a href="https://www.thetrainline.com/trains/great-britain/railcards/16-25-railcard" target="_blank" class="text-blue-600 font-bold block mt-1">Buy 16-25 Railcard (1/3 Off)</a></td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Transport</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-bus mr-2 text-red-500"></i>Stagecoach & Local Bus</td>
-                            <td class="px-6 py-4 text-slate-600">If outside London, find your local bus app (Stagecoach/First) for student term passes.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Transport</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-map-location-dot mr-2 text-green-500"></i>Citymapper vs G-Maps</td>
-                            <td class="px-6 py-4 text-slate-600">Use Citymapper for public transit in big cities. It's much more accurate than Google Maps.</td>
-                        </tr>
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-bold">Transport</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-address-card mr-2 text-blue-400"></i>Oyster (London)</td>
-                            <td class="px-6 py-4 text-slate-600">If in London, link your 16-25 Railcard to an Oyster card at a station for 1/3 off Tube travel.</td>
-                        </tr>
-
-                        <!-- Housing -->
-                        <tr class="app-row">
-                            <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-800 rounded-md text-xs font-bold">Housing</span></td>
-                            <td class="px-6 py-4 font-bold text-navy"><i class="fas fa-bed mr-2 text-slate-600"></i>SpareRoom</td>
-                            <td class="px-6 py-4 text-slate-600">The only app you need to find a single room in a shared house.</td>
+                            <td class="px-8 py-5"><span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">Transport</span></td>
+                            <td class="px-8 py-5 font-bold text-navy">16-25 Railcard</td>
+                            <td class="px-8 py-5 text-slate-600">Saves you 1/3 on all UK train fares. Pays for itself in 1-2 trips. <a href="https://www.railcard.co.uk" target="_blank" class="text-blue-600 font-bold ml-2">Buy Now →</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
+        </article>
 
     </main>
 
     <script>
-        // Tab Navigation Logic
+        // SEO Tab Navigation Logic
         const navBtns = document.querySelectorAll('.nav-btn');
         const tabContents = document.querySelectorAll('.tab-content');
 
         navBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const targetId = btn.getAttribute('data-target');
-                
-                // Reset Active States
                 navBtns.forEach(b => b.classList.remove('active'));
-                tabContents.forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                // Set New Active State
+                tabContents.forEach(content => content.classList.remove('active'));
                 btn.classList.add('active');
                 document.getElementById(targetId).classList.add('active');
-                
-                // Scroll to top on mobile when tab changes
-                if(window.innerWidth < 768) {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
 
-        // Referral Link Copier
-        function copyCode(link) {
+        // Referral Link Copy
+        function copyLink(link) {
             navigator.clipboard.writeText(link).then(() => {
                 const toast = document.getElementById("toast");
-                toast.innerHTML = `<i class="fas fa-check-circle mr-2"></i>Link copied!`;
                 toast.className = "show";
-                setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
-            }).catch(err => console.error('Failed to copy: ', err));
+                setTimeout(function(){ toast.className = ""; }, 3000);
+            });
         }
 
-        // Table Search/Filter Logic
+        // Live Directory Search
         const searchInput = document.getElementById('searchInput');
         const tableRows = document.querySelectorAll('.app-row');
-
-        searchInput.addEventListener('keyup', function(e) {
+        searchInput.addEventListener('keyup', (e) => {
             const term = e.target.value.toLowerCase();
             tableRows.forEach(row => {
-                const text = row.textContent.toLowerCase();
-                row.style.display = text.includes(term) ? '' : 'none';
+                row.style.display = row.textContent.toLowerCase().includes(term) ? '' : 'none';
             });
         });
 
-        // Interactive Checklist Progress
+        // Engagement Tracker Logic
         const checkboxes = document.querySelectorAll('.task-check');
         const progressBar = document.getElementById('progress-bar');
         const progressText = document.getElementById('progress-text');
-
-        function updateProgress() {
-            let checkedCount = 0;
-            checkboxes.forEach(box => { if(box.checked) checkedCount++; });
-            const total = checkboxes.length;
-            progressBar.style.width = (checkedCount / total) * 100 + '%';
-            progressText.innerText = `${checkedCount}/${total} Completed`;
-        }
-
-        checkboxes.forEach(box => box.addEventListener('change', updateProgress));
+        checkboxes.forEach(box => {
+            box.addEventListener('change', () => {
+                const checked = Array.from(checkboxes).filter(b => b.checked).length;
+                const percent = (checked / checkboxes.length) * 100;
+                progressBar.style.width = percent + '%';
+                progressText.innerText = Math.round(percent) + '% Done';
+            });
+        });
     </script>
 </body>
 </html>
